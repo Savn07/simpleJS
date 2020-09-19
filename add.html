@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/Aicon.ico">
+    <title>Add</title>
+</head>
+<body>
+    <nav>
+        <div class="sidenav">
+            <a href="index.html">Home</a>
+            <a class="active" href="add.html">Add</a>
+            <a href="sub.html">Subtract</a>
+            <a href="mul.html">Multiply</a>
+            <a href="div.html">Divide</a>
+          </div>
+      </nav>
+      <div class="outer">
+          <div class="inner">
+              <label>Enter Two numbers</label> <br> <br>
+            Number1 = <input type="text" id="num1" /> <br>
+            Number2 = <input type="text" id="num2" /> <br>
+            <input type="button" name="Sumbit" value="Click here" onclick="javascript:addNumbers()"/> <br>
+            Answer = <input type="text" id="answer"/>
+        </div>
+      </div>
+      <script language="javascript">
+        function addNumbers()
+        {
+                var val1 = parseInt(document.getElementById("num1").value);
+                var val2 = parseInt(document.getElementById("num2").value);
+                var ansD = document.getElementById("answer");
+                ansD.value = val1 + val2;
+        }
+</script>
+
+<div style="background-color: #b2ebf2;">
+    <hr>
+    <div style="background-color: white; padding: 8px;">
+        <center>Savn © 2020 All rights reserved</center>
+    </div>
+    <hr>
+</div>
+
+</body>
+</html>
